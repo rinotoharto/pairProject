@@ -1,61 +1,48 @@
-<%- include('./partial/header') %>
-<%- include('./partial/jumbotron') %>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<div class="row">
-  <div class="card" style="width: 10rem;">
-    <img class="card-img-top" src="/img/k.jpg" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Price : Rp 10000</p>
-      <p class="card-text">stock : XX</p>
-      <label for="first_name">Amount</label>
-      <input type="number" class="form-control" id="amount" name="amount" placeholder="amount"><br>
-      <button type="submit" class="btn btn-primary">Add to Cart</button>
-    </div>
-  </div>
-  <div class="card" style="width: 10rem;">
-    <img class="card-img-top" src="/img/a.jpg" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Price : Rp 10000</p>
-      <p class="card-text">stock : XX</p>
-      <label for="first_name">Amount</label>
-      <input type="number" class="form-control" id="amount" name="amount" placeholder="amount"><br>
-      <button type="submit" class="btn btn-primary">Add to Cart</button>
-    </div>
-  </div>
-  <div class="card" style="width: 10rem;">
-    <img class="card-img-top" src="/img/f.jpg" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Price : Rp 10000</p>
-      <p class="card-text">stock : XX</p>
-      <label for="first_name">Amount</label>
-      <input type="number" class="form-control" id="amount" name="amount" placeholder="amount"><br>
-      <button type="submit" class="btn btn-primary">Add to Cart</button>
-    </div>
-  </div>
-  <div class="card" style="width: 10rem;">
-    <img class="card-img-top" src="/img/t.jpg" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Price : Rp 10000</p>
-      <p class="card-text">stock : XX</p>
-      <label for="first_name">Amount</label>
-      <input type="number" class="form-control" id="amount" name="amount" placeholder="amount"><br>
-      <button type="submit" class="btn btn-primary">Add to Cart</button>
-    </div>
-  </div>
-  <div class="card" style="width: 10rem;">
-    <img class="card-img-top" src="/img/t.jpg" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Price : Rp 10000</p>
-      <p class="card-text">stock : XX</p>
-      <label for="first_name">Amount</label>
-      <input type="number" class="form-control" id="amount" name="amount" placeholder="amount"><br>
-      <button type="submit" class="btn btn-primary">Add to Cart</button>
-    </div>
-  </div>
-  
-</div>
-
-<!-- nanti di sini bisa di isi grid buat item nya -->
-
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
+        <style>
+          body{
+            background-image: url('../img/online.jpg');
+          }
+        </style>
+        <title>Toko Online</title>
+      </head>
+      <body>
+        <nav>
+          <div class="logo">
+            <h4>Toko Online</h4>
+          </div>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/user/listItem">List Item</a></li>
+            <li><a href="/user/login">Log In</a></li>
+            <li><a href="/user/logOut">Log Out</a></li>
+            <li><a href="/user/register">Register</a></li>
+          </ul>
+        </nav>
+        <% if(alert.msg){ %>
+          <div class="alert alert-danger" role="alert">
+              <%= alert.msg %>
+          </div>
+        <% } %>
 <%- include('./partial/footer') %>
 

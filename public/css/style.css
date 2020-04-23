@@ -35,9 +35,8 @@ nav ul li a:hover{
 
 .jumbotron {
   background-image: url('../img/online.jpg');
-  height: 350px;
+  height: 100%;
   opacity: 0.9;
-
 }
 
 .container h1 {

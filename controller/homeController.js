@@ -1,7 +1,8 @@
 class HomeController {
   
   static getHome(req, res) {
-    res.render('home')
+    let alert = req.query
+    res.render('home', {alert})
   }
 
   static getError(req, res) {
